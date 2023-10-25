@@ -1,0 +1,369 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 1450px;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999999999999999999999999;
+
+}
+
+header nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+header nav .logo h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-top: 28px;
+
+}
+
+header nav ul li {
+    margin: 0px 10px;
+}
+
+
+header nav ul li a {
+    padding: 10px;
+    font-size: 19px;
+    color: #848484;
+    transition: 1s;
+
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    color: #fff ;
+}
+
+header nav .btn {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    color: #000;
+    background-color: #fbe850;
+    transition: 1s;
+
+}
+
+header nav .btn:hover {
+    background-color: #000;
+    color: #fbe850;
+    border: 1px solid #fbe850;
+}
+
+
+header nav .toggle-menu {
+    display: none;
+}
+
+header nav .toggle-menu i {
+    margin-top: 25px;
+    margin-right: 15px;
+    font-size: 20px;
+    color: #fbe850;
+
+}
+
+
+@media (max-width : 750px) {
+    body {
+        height: 2515px;
+    }
+
+    header nav {
+        position: relative;
+    }
+
+    header nav .logo h1 {
+        font-size: 22px;
+    }
+
+    header nav ul {
+        position: absolute;
+        background-color: #fbe850;
+        top: 40px;
+        right: -500px;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        z-index: 88888888888888888888888888888888888;
+        transition: 1s;
+    }
+
+    header nav ul li {
+        margin: 15px 0px;
+    }
+
+    .return-list {
+        right: 0;
+        transition: 1s;
+    }
+
+    header nav .toggle-menu {
+        display: block;
+    }
+
+
+}
+
+@media ( min-width :751px) and (max-width :950px) {
+    body {
+        height: 2460px;
+    }
+}
+
+
+/*  ============================================================ end header ================================ */
+
+
+
+/*  ======================================================== main ========================================= */
+
+.main {
+    margin-top: 68px;
+    background-color: #fbe850;
+}
+
+.main h1 {
+    padding-top: 50px;
+    margin-bottom: 10px;
+    font-size: 38px;
+    color: #000;
+    font-weight: bold;
+}
+
+.main p {
+    font-size: 16px;
+    color: #000;
+
+}
+
+.main .owl-carousel {
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    
+}
+
+.main .owl-carousel .item {
+    cursor: pointer;
+    
+    
+}
+
+.main .owl-carousel .item img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 30px;
+    
+    
+}
+
+
+
+@media (max-width : 750px) {
+    .main .owl-carousel .item img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media ( min-width :751px) and (max-width :950px) {
+    .main .owl-carousel .item img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/*  ====================================================== end main ================================================= */
+
+.info-1 {
+    background-color: #000;
+
+}
+
+.info-1 .img-fluid {
+    padding-top: 25px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+
+}
+
+.info-1 h2 {
+    font-size: 25px;
+    color: #fff;
+    margin-top: 20px;
+
+}
+
+.info-1 p {
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+
+
+/*  =================================================== end info-1 ========================================= */
+
+
+/*  =====================================================info-2 ============================================= */
+.info-2 {
+    background-color: rgb(46,48,56);
+    width: 100%;
+    height: auto;
+}
+
+
+.info-2 h3 {
+    font-size: 30px;
+    color: rgb(255,255,255);
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.info-2 p {
+    margin-top: 25px;
+    color: rgb(132,132,112);
+    font-size: 15px;
+}
+
+
+
+
+/*  ================================================ end info-2 ================================================= */
+
+
+
+/*  ================================================== info-3 ============================================ */
+
+.info-3 {
+    background-color: #000;
+    width: 100%;
+    height: auto;
+
+}
+
+.info-3 h4 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 25px;
+    margin-bottom: 12px;
+
+}
+
+
+.info-3 p {
+    color: rgb(132,132,112);
+    font-size: 15px;
+
+}
+
+.info-3 .btn {
+
+    margin-bottom: 20px;
+    margin-right: 15px;
+    color: #000;
+    background-color: #fbe850;
+    transition: 1s;
+}
+
+
+
+.info-3 .btn:hover {
+    background-color: #000;
+    color: #fbe850;
+    border: 1px solid #fbe850;
+}
+
+
+/*  ========================================================== end info-3 ====================================== */
+
+
+
+/*  ======================================================== end -content ====================================== */
+.end-content {
+    background-color: #2E3038;
+    width: 100%;
+    height: auto;
+}
+
+.end-content h5 {
+    font-size: 30px;
+    color: rgb(255,255,255);
+    margin-top: 15px;
+}
+
+.end-content i {
+    margin: 15px 0px;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*  ============================================================= end end-content =============================== */
+
+
+/*  button scroll-top  */
+
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: -200px;
+    color: #000;
+    background-color: #fbe850;
+    font-size: 22px;
+    transition: 1s;
+
+}
+
+.scroll-top:hover {
+    background-color: #000;
+    color: #fbe850;
+    border: 1px solid #fbe850;
+}
+
+.return-button {
+    right: 20px;
+    transition: 1s;
+}
+
+
+
+
+
+
+
